@@ -1,4 +1,5 @@
 package AULA_04;
+
 class Produto {
     private String nome;
     private String categoria;
@@ -27,11 +28,21 @@ class Produto {
     public int getQuantidade() {
         return quantidade;
     }
+
+    public String exibirResumo() {
+        return "Produto: " + nome + ", Categoria: " + categoria + ", Preço: R$" + preco + ", Quantidade: " + quantidade;
+    }
 }
 public class Polimorfismo {
 
     public static void main(String[] args) {
-        
+        Produto p1 = new Produto("Notebook", "Eletrônicos", 3500.00, 10);
+        Produto p2 = new Produto("Camiseta", "Roupas", 50.00, 100);
+        Produto p3 = new Produto("Cadeira", "Móveis", 200.00, 20);
+
+        System.out.println(p1.exibirResumo());
+        System.out.println(p2.exibirResumo());
+        System.out.println(p3.exibirResumo());
     }
 
 }
