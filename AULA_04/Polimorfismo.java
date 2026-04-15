@@ -12,7 +12,21 @@ class Produto {
         this.quantidade = quantidade;
     }
 
+    public String getNome() {
+        return nome;
+    }
 
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public int getQuantidade() {
+        return quantidade;
+    }
 }
 public class Polimorfismo {
 
